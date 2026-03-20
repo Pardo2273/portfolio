@@ -12,3 +12,14 @@ defineProps({
     <ProjectCard :projects="projects" />
   </section>
 </template>
+
+<style scoped>
+
+@media (min-width: 320px) and (max-width: 767px) {
+  h3 {
+    text-align: center;
+    font-size: xx-large;
+  }
+}
+
+</style>

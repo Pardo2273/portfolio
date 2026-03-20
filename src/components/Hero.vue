@@ -1,15 +1,52 @@
 <script></script>
 
 <template>
-  <section>
-    <h2>Hi, I'm Gabriel Josué Prado López</h2>
-    <p>
-      Software Developer focused on backend systems, automation tools and practical software
-      solutions.
-    </p>
-    <p>
-      I build software solutions that automate processes, reduce manual work, and solve real-world
-      problems.
-    </p>
+  <section class="container">
+    <div class="cont-div-one">
+      <img src="../assets/images/me.jpg" alt="Gabriel Josué Prado López" class="profile-pic" />
+      <h2>Hi, I'm Gabriel Josué Prado López</h2>
+    </div>
+    <div class="cont-div-two">
+      <p>
+        Software Developer focused on backend systems, automation tools and practical software
+        solutions.
+      </p>
+      <p>
+        I build software solutions that automate processes, reduce manual work, and solve real-world
+        problems.
+      </p>
+    </div>
   </section>
 </template>
+
+<style scoped>
+.profile-pic {
+  width: 100px;
+  border-radius: 50%;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cont-div-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+  }
+
+  .cont-div-two{
+    font-size: large;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 150px;
+  }
+}
+
+
+</style>
