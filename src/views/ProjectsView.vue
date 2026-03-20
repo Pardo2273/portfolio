@@ -1,6 +1,6 @@
 <script setup>
 import ProjectCard from '../components/ProjectCard.vue'
-import {projects} from '../data/projects'
+import { projects } from '../data/projects'
 
 defineProps({
   projects: Array,

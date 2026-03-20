@@ -55,4 +55,35 @@
     border-radius: 5px;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .about-child-1{
+    margin: 0 4%;
+    text-align: justify;
+    font-size: large;
+  }
+
+  .about-child-2 h3 {
+    text-align: center;
+    font-size: xx-large;
+  }
+
+  .about-child-2 ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: large;
+  }
+
+  .about-child-2 li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+  }
+}
 </style>

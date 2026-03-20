@@ -45,4 +45,27 @@
     }
 
 }
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1023px){
+
+    nav{
+        padding: 20px;
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5%;
+        padding: 10px;
+    }
+
+}
 </style>

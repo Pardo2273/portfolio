@@ -48,5 +48,37 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1023px){
+
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cont-div-one{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: x-large;
+  }
+
+  .profile-pic{
+    width: 150px;
+    border-radius: 25%;
+  }
+
+  .cont-div-two{
+    display: flex;
+    flex-direction: column column;
+    gap: 20px;
+    font-size: x-large;
+    text-align: center;
+  }
+
+
+
+  
+}
+
 
 </style>

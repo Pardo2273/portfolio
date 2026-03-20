@@ -48,4 +48,31 @@
     margin: 0 10px;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid black;
+  }
+
+  .social a{
+    color: black;
+    text-decoration: none;
+  }
+
+  .barra{
+    display: inline-block;
+    width: 1px;
+    height: 30px;
+    background-color: black;
+    margin: 0 10px;
+  }
+
+  .colored{
+    font-size: 2.2rem;
+  }
+
+}
 </style>

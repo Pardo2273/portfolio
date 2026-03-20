@@ -5,7 +5,7 @@ defineProps({
 </script>
 
 <template>
-  <section>
+  <div class="container">
     <div v-for="project in projects" :key="project.title" class="card">
       <h4>{{ project.title }}</h4>
       <p>Description: {{ project.description }}</p>
@@ -18,7 +18,7 @@ defineProps({
         <a :href="project.demo" target="_blank">View Demo </a>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <style scoped>
@@ -33,7 +33,7 @@ i {
     border: 2px solid #ccc;
     border-radius: 1%;
     padding: 10px;
-    margin: .5% 0;
+    margin: 0.5% 0;
   }
   .card h4 {
     font-size: x-large;
@@ -65,5 +65,52 @@ i {
     margin: 0 20px;
     justify-content: center;
   }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .card {
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 1%;
+    padding: 20px;
+    margin: 0.5% 0;
+  }
+
+  .card h4 {
+    font-size: x-large;
+    font-weight: lighter;
+    font-style: normal;
+    text-align: center;
+  }
+
+  .card p {
+    font-size: large;
+  }
+
+  .buttoms {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .buttoms a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .btn-git {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
 }
 </style>

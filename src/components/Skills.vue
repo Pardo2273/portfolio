@@ -72,7 +72,41 @@ export default {
   }
 
   li {
-    box-shadow: -4px 6px 11px 3px #23282B;
+    box-shadow: -4px 6px 11px 3px #23282b;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  h2 {
+    text-align: center;
+    font-size: xx-large;
+  }
+
+  h3 {
+    font-size: x-large;
+    font-weight: lighter;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+  }
+
+  li {
+    padding: 10px;
+    box-shadow: inset 0px -6px 5px -5px rgba(0, 0, 0, 0.63);
+    border-radius: 5%;
+  }
+
+  li i {
+    font-size: 64px;
   }
 }
 
