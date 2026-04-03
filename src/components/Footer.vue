@@ -73,6 +73,35 @@
   .colored{
     font-size: 2.2rem;
   }
+}
 
+@media (min-width: 1024px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid black;
+  }
+
+  .container p{
+    font-size: x-large;
+  }
+
+  .social a{
+    color: black;
+    text-decoration: none;
+  }
+
+  .barra{
+    display: inline-block;
+    width: 1px;
+    height: 35px;
+    background-color: black;
+    margin: 0 10px;
+  }
+
+  .colored{
+    font-size: 2.5rem;
+  }
 }
 </style>

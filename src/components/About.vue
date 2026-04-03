@@ -86,4 +86,43 @@
     border-radius: 5px;
   }
 }
+
+@media (min-width: 1024px) {
+  .container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .about-child-1{
+    margin: 0 2%;
+    text-align: justify;
+    font-size: large;
+  }
+
+  .about-child-1 p {
+    font-size: x-large;
+  }
+
+  .about-child-2 h3 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .about-child-2 ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: xx-large;
+    color: #2b2b2c;
+    line-height: 1.6;
+  }
+
+  .about-child-2 li {
+    padding: 2px;
+    border-bottom: 1px solid hsl(0, 2%, 78%);
+    
+  }
+}
 </style>

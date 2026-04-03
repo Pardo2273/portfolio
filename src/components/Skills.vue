@@ -68,11 +68,18 @@ export default {
 
   ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 10%;
+    list-style: none;
+    padding: 0;
   }
 
   li {
     box-shadow: -4px 6px 11px 3px #23282b;
+  }
+
+  i {
+    font-size: 48px;
   }
 }
 
@@ -97,6 +104,7 @@ export default {
     display: flex;
     gap: 20px;
     padding: 0;
+    list-style: none;
   }
 
   li {
@@ -110,15 +118,45 @@ export default {
   }
 }
 
-ul {
-  list-style: none;
-}
+@media (min-width: 1024px) {
+  h2 {
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+  }
 
-i {
-  font-size: 48px;
-}
+  section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
 
-/* i:hover{
-  font-size: 60px;
-} */
+  div {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  h3 {
+    font-size: 25px;
+    font-weight: lighter;
+    margin: 0;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li {
+    margin-top: 30px;
+  }
+
+  i {
+    font-size: 60px;
+  }
+}
 </style>

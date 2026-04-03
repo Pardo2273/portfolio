@@ -120,4 +120,50 @@
     font-size: 4rem;
   }
 }
+
+@media (min-width: 1024px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+  }
+  .container p {
+    font-size: x-large;
+    text-align: center;
+    padding: 0;
+  }
+
+  .container ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container li {
+    margin: 0 20px 0 0;
+  }
+  
+  .container li a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .devicon-linkedin-plain-wordmark {
+    font-size: 7rem;
+  }
+
+  .devicon-github-original-wordmark {
+    font-size: 4rem;
+  }
+}
+
 </style>

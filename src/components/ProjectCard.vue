@@ -22,10 +22,6 @@ defineProps({
 </template>
 
 <style scoped>
-i {
-  font-size: 1.5em;
-}
-
 @media (min-width: 320px) and (max-width: 767px) {
   .card {
     box-sizing: border-box;
@@ -64,6 +60,10 @@ i {
   .btn-git {
     margin: 0 20px;
     justify-content: center;
+  }
+
+  i {
+    font-size: 1.5em;
   }
 }
 
@@ -112,5 +112,63 @@ i {
     gap: 5px;
   }
 
+  i {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;   
+    gap: 5%;
+    width: 90%;
+    margin: 0 5%;
+  }
+
+  .card{
+    box-sizing: border-box;
+    border: 1px solid hsl(0, 2%, 78%);
+    border-radius: 1%;
+    padding: 20px;
+    margin: 0.5% 0;
+    width: 30%;
+  }
+
+  .card h4 {
+    font-size: x-large;
+    font-weight: lighter;
+    font-style: normal;
+    text-align: center;
+  }
+
+  .card p {
+    font-size: large;
+  }
+
+  .buttoms {
+     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .buttoms a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+  }
+
+  .btn-git {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  i {
+    font-size: 2em;
+  }
 }
 </style>

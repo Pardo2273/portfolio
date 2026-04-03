@@ -20,65 +20,95 @@
 </template>
 
 <style scoped>
-.profile-pic {
-  width: 100px;
-  border-radius: 50%;
-}
 @media (min-width: 320px) and (max-width: 767px) {
-  .container{
+  .container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .cont-div-one{
+  .cont-div-one {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: large;
   }
 
-  .cont-div-two{
+  .cont-div-two {
     font-size: large;
     text-align: center;
   }
 
   .profile-pic {
     width: 150px;
+    border-radius: 50%;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px){
-
-  .container{
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
     display: flex;
     flex-direction: column;
   }
 
-  .cont-div-one{
+  .cont-div-one {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     font-size: x-large;
   }
 
-  .profile-pic{
+  .profile-pic {
     width: 150px;
     border-radius: 25%;
   }
 
-  .cont-div-two{
+  .cont-div-two {
     display: flex;
     flex-direction: column column;
     gap: 20px;
     font-size: x-large;
     text-align: center;
   }
-
-
-
-  
 }
 
+@media (min-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .profile-pic {
+    width: 275px;
+    border-radius: 50%;
+  }
+
+  .cont-div-one {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: xx-large;
+    margin-top: 2%;
+  }
+
+  .cont-div-two {
+    width: 80%;
+    margin: 1% 10%;
+    display: flex;
+    flex-direction: column column;
+    align-items: center;
+    font-size: xx-large;
+    text-align: center;
+  }
+
+  .cont-div-two p::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin-top: 20px;
+  }
+}
 </style>
