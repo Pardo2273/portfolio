@@ -1,4 +1,5 @@
 <script setup></script>
+
 <template>
   <div class="btn-container">
     <button class="btn-dowload">Download Resume</button>
@@ -136,117 +137,118 @@
 </template>
 
 <style scoped>
-.btn-container {
-  display: flex;
-  justify-content: right;
-}
-
-.btn-dowload {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 @media (min-width: 320px) and (max-width: 767px) {
+  .btn-container {
+    display: flex;
+    justify-content: right;
+    margin: 2%;
+  }
 
-  .summary{
-    display:flex;
+  .btn-dowload {
+    width: 10rem;
+    background-color: #1a508a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .summary {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .summary h2{
+  .summary h2 {
     font-size: xx-large;
   }
 
-  .summary p{
+  .summary p {
     margin: 2%;
     text-align: justify;
   }
 
-  .experience{
+  .experience {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .experience h2{
+  .experience h2 {
     font-size: x-large;
     margin: 0.5rem;
   }
 
-  .experience h3{
+  .experience h3 {
     font-size: large;
     margin: 0.5rem;
   }
 
-  .experience span{
+  .experience span {
     font-size: medium;
     font-style: italic;
   }
 
-  .experience p{
+  .experience p {
     font-size: medium;
     margin: 0.5rem;
   }
 
-  .experience ul{
+  .experience ul {
     margin: 0.5rem;
     list-style: square;
   }
 
-  .experience ul li{
+  .experience ul li {
     text-align: justify;
   }
 
-  .education{
+  .education {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .education h2{
+  .education h2 {
     font-size: xx-large;
     margin: 0.5rem;
   }
 
-  .education h3{
+  .education h3 {
     font-weight: lighter;
     font-size: large;
     margin: 0.5rem;
   }
 
-  .education span{
+  .education span {
     font-size: medium;
     font-style: italic;
   }
 
-  .education p{
+  .education p {
     font-size: medium;
     margin: 0.5rem;
   }
 
-  .skills{
+  .skills {
     display: flex;
     flex-direction: column;
   }
 
-  .skills h2{
+  .skills h2 {
     text-align: center;
     font-size: xx-large;
     margin: 0.5rem;
   }
 
-  .skills h3{
+  .skills h3 {
     text-align: center;
     font-size: large;
     margin: 0.5rem;
   }
 
-  .skills ul{
+  .skills ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -255,23 +257,23 @@
     list-style: square;
   }
 
-  .skills ul li{
+  .skills ul li {
     margin: 0 2px;
   }
 
-  .dev-areas{
+  .dev-areas {
     display: flex;
     flex-direction: column;
     margin: 0;
   }
 
-  .dev-areas h2{
+  .dev-areas h2 {
     text-align: center;
     font-size: xx-large;
     margin-top: 1rem;
   }
 
-  .dev-areas ul{
+  .dev-areas ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -280,23 +282,23 @@
     list-style: square;
   }
 
-  .dev-areas ul li{
+  .dev-areas ul li {
     margin: 0 2px;
   }
 
-  .languages{
+  .languages {
     display: flex;
     flex-direction: column;
     margin: 0;
   }
 
-  .languages h2{
+  .languages h2 {
     text-align: center;
     font-size: xx-large;
     margin-top: 1rem;
   }
 
-  .languages ul{
+  .languages ul {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -305,34 +307,52 @@
     margin-bottom: 2rem;
   }
 
-  .languages ul li:first-child{
+  .languages ul li:first-child {
     border-right: 1px solid black;
     padding-right: 15px;
   }
-
-
-
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .summary{
+  .btn-container {
+    display: flex;
+    justify-content: left;
+    padding: 30px;
+  }
+
+  .btn-dowload {
+    width: 15rem;
+    height: 3rem;
+    background-color: #1a508a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .summary {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .summary h2{
+  .summary h2 {
     margin: 0;
     font-size: xx-large;
   }
 
-  .summary p{
+  .summary p {
     margin: 1% 2%;
     text-align: center;
     font-size: 20px;
   }
 
-  .experience, .education, .skills, .dev-areas, .languages{
+  .experience,
+  .education,
+  .skills,
+  .dev-areas,
+  .languages {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -340,66 +360,72 @@
     margin: 1% 10%;
   }
 
-  .experience h2{
+  .experience h2 {
     text-align: center;
     font-size: xx-large;
     margin: 0.5rem;
   }
-  
-  .experience h3{
+
+  .experience h3 {
     font-size: 22px;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
   }
 
-  .experience span{
+  .experience span {
     font-size: 20px;
     font-style: italic;
   }
 
-  .experience p{
+  .experience p {
     font-size: 18px;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
     font-style: italic;
   }
 
-  .experience ul{
-    margin: .5rem 0;
+  .experience ul {
+    margin: 0.5rem 0;
     list-style: square;
     font-size: 20px;
   }
 
-  .experience ul li{
+  .experience ul li {
     text-align: justify;
   }
 
-  .education h2, .skills h2, .dev-areas h2, .languages h2{
+  .education h2,
+  .skills h2,
+  .dev-areas h2,
+  .languages h2 {
     font-size: xx-large;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
   }
 
-  .education h3{
+  .education h3 {
     font-weight: lighter;
     font-size: 22px;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
   }
 
-  .education span{
+  .education span {
     font-size: 20px;
     font-style: italic;
   }
 
-  .education p{
-    font-size: 18px;    margin: .8rem 0;
+  .education p {
+    font-size: 18px;
+    margin: 0.8rem 0;
     font-style: italic;
   }
 
-  .skills h3{
+  .skills h3 {
     font-size: 22px;
     font-weight: lighter;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
   }
 
-  .skills ul, .dev-areas ul, .languages ul{
+  .skills ul,
+  .dev-areas ul,
+  .languages ul {
     margin: 0.5rem 0;
     display: flex;
     flex-direction: column;
@@ -408,12 +434,90 @@
     list-style: square;
   }
 
-  .btn-container{
+  .btn-container {
     margin-bottom: 1%;
   }
+}
 
-  
+@media (min-width: 1024px) {
+  .btn-container {
+    display: flex;
+    justify-content: left;
+    padding: 30px;
+  }
 
+  .btn-dowload {
+    width: 10rem;
+    height: 3.5rem;
+    background-color: #1a508a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+   
+  .summary h2, .experience h2, .education h2, .skills h2, .dev-areas h2, .languages h2 {
+    margin: 1% 2%;
+    font-size: 40px;
+  }
+
+  .summary p {
+    margin: 1% 2%;
+    text-align: center;
+    font-size: x-large;
+  }
+
+  .experience h3{
+    margin: 1% 2%;
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .experience span,  .education span {
+    margin: 1% 2%;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: lighter;
+  }
+
+  .experience p,   .education p {
+    margin: 1% 2%;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  .experience ul, .dev-areas ul, .skills ul, .languages ul {
+    margin: 1% 2%;
+    list-style: circle;
+    font-size: 20px;
+  }
+
+  .experience ul li, .dev-areas ul li, .skills ul li, .languages ul li {
+    margin-bottom: 8px;
+  }
+
+  .education h3, .skills h3 {
+    margin: 1% 2%;
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .education p::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 1% 0;
+  }
 
 }
 </style>
