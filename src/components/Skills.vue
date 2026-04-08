@@ -62,15 +62,14 @@ h2 {
   text-shadow: var(--shadow);
   color: var(--text);
   text-shadow: 2px 2px 0 var(--accent);
-  }
-
-  h3{
-    color: var(--text);
+  filter: brightness(160%);
   }
 
 section{
   background: var(--bg);
-  color: var(--text);
+  font-family: var(--font-main);
+  color: var(--text); 
+  filter: brightness(160%); 
 }
 
 ul{
@@ -84,12 +83,19 @@ li {
     border-radius: 5%;
   }
 
-.devicon-github-original.colored, .devicon-dotnetcore-plain.colored, .devicon-postgresql-plain.colored{
+.devicon-github-original.colored, .devicon-postgresql-plain.colored{
   color: var(--text);
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
 
+  h2{
+    filter: brightness(120%);
+
+  }
+  section{
+    filter: brightness(120%);
+  }
   h3 {
     text-align: center;
     font-size: x-large;
@@ -112,6 +118,14 @@ li {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+
+  h2{
+    filter: brightness(125%);
+  }
+
+  section{
+    filter: brightness(125%);
+  }
 
   h3 {
     font-size: x-large;

@@ -28,6 +28,7 @@
 </template>
 
 <style scoped>
+
 @media (min-width: 320px) and (max-width: 767px) {
 
   .container {

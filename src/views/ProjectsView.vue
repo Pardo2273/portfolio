@@ -16,7 +16,13 @@ defineProps({
 
 <style scoped>
 h3 {
+  margin: 0;
+  padding: 1% 0;
+  font-family: var(--font-main);
   text-align: center;
   font-size: 40px;
+  color: var(--text);
+  background: var(--bg);
+  filter: brightness(150%);
 }
 </style>
