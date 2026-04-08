@@ -50,11 +50,45 @@ export default {
 </template>
 
 <style scoped>
-@media (min-width: 320px) and (max-width: 767px) {
-  h2 {
-    text-align: center;
-    font-size: xx-large;
+
+h2 {
+  margin: 0;
+  padding: 1% 0;
+  font-family: var(--font-main);
+  text-align: center;
+  font-size: xx-large;
+  background: var(--bg);
+  color: var(--text);
+  text-shadow: var(--shadow);
+  color: var(--text);
+  text-shadow: 2px 2px 0 var(--accent);
   }
+
+  h3{
+    color: var(--text);
+  }
+
+section{
+  background: var(--bg);
+  color: var(--text);
+}
+
+ul{
+  padding: 0;
+  list-style: none;
+}
+
+li {
+    padding: 10px;
+    box-shadow: inset 0px -6px 59px -5px var(--accent);
+    border-radius: 5%;
+  }
+
+.devicon-github-original.colored, .devicon-dotnetcore-plain.colored, .devicon-postgresql-plain.colored{
+  color: var(--text);
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
 
   h3 {
     text-align: center;
@@ -70,12 +104,6 @@ export default {
     display: flex;
     justify-content: center;
     gap: 10%;
-    list-style: none;
-    padding: 0;
-  }
-
-  li {
-    box-shadow: -4px 6px 11px 3px #23282b;
   }
 
   i {
@@ -84,10 +112,6 @@ export default {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  h2 {
-    text-align: center;
-    font-size: xx-large;
-  }
 
   h3 {
     font-size: x-large;
@@ -103,14 +127,6 @@ export default {
   ul {
     display: flex;
     gap: 20px;
-    padding: 0;
-    list-style: none;
-  }
-
-  li {
-    padding: 10px;
-    box-shadow: inset 0px -6px 5px -5px rgba(0, 0, 0, 0.63);
-    border-radius: 5%;
   }
 
   li i {
@@ -120,8 +136,7 @@ export default {
 
 @media (min-width: 1024px) {
   h2 {
-    text-align: center;
-    font-size: 40px;
+    font-size: 45px;
     margin: 0;
   }
 
@@ -131,28 +146,30 @@ export default {
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
+    padding: 2%;
   }
 
   div {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 30px;
+    box-shadow: 0px 2px 14px 6px var(--accent);;
   }
 
   h3 {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: lighter;
     margin: 0;
   }
 
   ul {
-    list-style: none;
     margin: 0;
-    padding: 0;
   }
 
-  ul li {
+  li {
     margin-top: 30px;
+    padding: 0;
+    box-shadow: none;
   }
 
   i {

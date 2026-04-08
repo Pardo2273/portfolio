@@ -15,11 +15,8 @@ defineProps({
 </template>
 
 <style scoped>
-
 h3 {
   text-align: center;
   font-size: 40px;
 }
-
-
 </style>

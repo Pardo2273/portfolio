@@ -20,10 +20,19 @@
 </template>
 
 <style scoped>
+
+.container {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-main);
+  color: var(--text);
+  background: linear-gradient(to right, #16366B 0%, #081A46 55%, #1E293B 100%);
+  opacity: 0.96;
+}
+
+
 @media (min-width: 320px) and (max-width: 767px) {
   .container {
-    display: flex;
-    flex-direction: column;
     align-items: center;
   }
 
@@ -31,6 +40,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2%;
     font-size: large;
   }
 
@@ -46,15 +56,12 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
 
   .cont-div-one {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding: 1% 0;
     font-size: x-large;
   }
 
@@ -67,16 +74,13 @@
     display: flex;
     flex-direction: column column;
     gap: 20px;
+    padding: 0 4%;
     font-size: x-large;
     text-align: center;
   }
 }
 
 @media (min-width: 1024px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
 
   .profile-pic {
     width: 275px;
@@ -107,7 +111,7 @@
     display: block;
     width: 100%;
     height: 1px;
-    background-color: #ccc;
+    background-color: var(--text);
     margin-top: 20px;
   }
 }

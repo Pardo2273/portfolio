@@ -1,0 +1,19 @@
+:root {
+    /* colors */
+    --bg: #0f172a;
+    --surface: #1e293b;
+    --text: #e2e8f0;
+    --accent: #3b82f6;
+
+    /* fonts */
+    --font-main: Montserrat, sans-serif;
+
+    /* shadow */
+    --shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* this is a reset all, i know that i can create another class for it, although it's not the best practice for only one element */
+body{
+    all: unset;
+}
+
