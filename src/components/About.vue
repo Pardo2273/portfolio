@@ -29,12 +29,25 @@
 
 <style scoped>
 
+.container{
+  background: linear-gradient(to bottom, #121e3a 0%, #1e315f 46%, #182c4d 100%);
+  filter: brightness(110%);
+  font-family: var(--font-main);
+  color: var(--text);
+  border-top: 1px solid var(--surface);
+}
+
+.about-child-2 ul{
+    padding: 0;
+    list-style: none;
+  }
+
 @media (min-width: 320px) and (max-width: 767px) {
 
   .container {
     display: flex;
     flex-direction: column-reverse;
-    margin: 0 1%;
+    padding: 0 1%;
     font-size: large;
     text-align: justify;
   }
@@ -47,12 +60,11 @@
   .about-child-2 ul{
     display: flex;
     justify-content: space-around;
-    list-style: none;
   }
 
   .about-child-2 li {
     padding: 10px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--text);
     border-radius: 5px;
   }
 }
@@ -77,13 +89,12 @@
   .about-child-2 ul{
     display: flex;
     justify-content: space-around;
-    list-style: none;
     font-size: large;
   }
 
   .about-child-2 li {
     padding: 10px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--text);
     border-radius: 5px;
   }
 }
@@ -114,9 +125,7 @@
     justify-content: space-around;
     margin: 0;
     padding: 0;
-    list-style: none;
     font-size: xx-large;
-    color: #2b2b2c;
     line-height: 1.6;
   }
 

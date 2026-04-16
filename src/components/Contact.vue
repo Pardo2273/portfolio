@@ -26,11 +26,26 @@
 
 <style scoped>
 
+.container{
+  background: linear-gradient(to bottom, #182c4d 0%, #122544 50%, #16366b 100%);
+  font-family: var(--font-main);
+  color: var(--text);
+}
+
+.container li a{
+    text-decoration: none;
+    color: var(--text);
+  }
+
+  .colored{
+    color: var(--text);
+  }
+
 @media (min-width: 320px) and (max-width: 767px) {
   .container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
   }
 
   .container h3 {
@@ -55,20 +70,10 @@
 
   .container li {
     text-align: center;
-    color: black;
   }
 
   .container li:first-child {
     margin-top: 10px;
-  }
-
-  .container a {
-    text-decoration: none;
-    color: black;
-  }
-
-  .mail{
-    border-bottom: 1px dotted black;
   }
 
   .colored {
@@ -104,14 +109,6 @@
     gap: 20px;
   }
 
-  .container li a{
-    text-decoration: none;
-  }
-
-  .mail {
-    color: black;
-  }
-
   .devicon-linkedin-plain-wordmark {
     font-size: 7rem;
   }
@@ -125,6 +122,7 @@
   .container{
     display: flex;
     flex-direction: column;
+    padding: 1%;
   }
 
   .container h3 {
@@ -150,11 +148,6 @@
 
   .container li {
     margin: 0 20px 0 0;
-  }
-  
-  .container li a{
-    text-decoration: none;
-    color: black;
   }
 
   .devicon-linkedin-plain-wordmark {

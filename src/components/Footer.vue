@@ -21,6 +21,19 @@
 </template>
 
 <style scoped>
+
+.container{
+  background: var(--bg);
+  background: linear-gradient(135deg, #16366b 0%, #081a46 60%, #124991d8 100%);
+  font-family: var(--font-main);
+  color: var(--text);
+  padding: .9% 0;
+}
+
+.colored{
+  color: var(--text);
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .container {
     border-top: 1px solid black;
@@ -80,7 +93,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top: 1px solid black;
+    border-top: 2px solid var(--accent);
   }
 
   .container p{
